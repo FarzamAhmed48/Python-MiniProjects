@@ -8,12 +8,29 @@
 # print(farzam.name)
 
 #This was the example of how to execute proper parameters in a class
+# class Employee:
+#     salary= "7 Crore"
+#     language = "JS and python"
+
+#     # def getInfo(self):
+#     #     print(f"The language of the employee is {self.language} and salary is {self.salary}")
+#     #  Above two line code same functionaltiy can be achieved by using @staticmethod decorator ! it tells the code that the function wont receive any paramters
+
+#     @staticmethod
+#     def greet():
+#         print(f"HEllo User")
+
+# object= Employee()
+# # object.getInfo()
+# object.greet()
+
+
+
 class Employee:
-    salary= "7 Crore"
-    language = "JS and python"
+    def __init__(self,salary,name,language):
+        self.salary=salary
+        self.name=name
+        self.language=language
 
-    def getInfo(self):
-        print(f"The language of the employee is {self.language} and salary is {self.salary}")
-
-object= Employee()
-object.getInfo()
+farzam=Employee("7 crore","Farzam Ahmed","JavaScript & Python")
+print(f"My name is {farzam.name} and my salary is {farzam.salary} and the languages i work on are {farzam.language}")
