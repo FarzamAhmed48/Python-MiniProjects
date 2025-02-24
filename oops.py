@@ -26,11 +26,33 @@
 
 
 
-class Employee:
-    def __init__(self,salary,name,language):
-        self.salary=salary
-        self.name=name
-        self.language=language
+# class Employee:
+#     def __init__(self,salary,name,language):
+#         self.salary=salary
+#         self.name=name
+#         self.language=language
 
-farzam=Employee("7 crore","Farzam Ahmed","JavaScript & Python")
-print(f"My name is {farzam.name} and my salary is {farzam.salary} and the languages i work on are {farzam.language}")
+# farzam=Employee("7 crore","Farzam Ahmed","JavaScript & Python")
+# print(f"My name is {farzam.name} and my salary is {farzam.salary} and the languages i work on are {farzam.language}")
+
+
+class Calculator:
+    def __init__(self,n):
+        self.square=n*n
+        self.cube=n*n*n
+        self.squareRoot=n**1/2
+    
+    def get_square(self):
+        print(f"The square of the given number is {self.square}")
+
+    def get_squareRoot(self):
+        print(f"The square root of the given number is {self.squareRoot}")
+    
+    def get_cube(self):
+        print(f"The cube of the given number is {self.cube}")
+
+number=Calculator(4)
+
+number.get_square()
+number.get_squareRoot()
+number.get_cube()
